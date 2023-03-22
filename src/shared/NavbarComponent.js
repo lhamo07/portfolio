@@ -2,7 +2,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import logo from "../assets/images/logo.png";
+import logo from "../assets/images/logo.svg";
 
 import { Link } from "react-scroll";
 const NavbarComponent = () => {
@@ -11,7 +11,7 @@ const NavbarComponent = () => {
       <Container>
         <Navbar.Brand>
           {" "}
-          <img src={logo} height="50px" width="50px" alt="logo" />
+          <img src={logo} className="logo-home" alt="logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -23,6 +23,7 @@ const NavbarComponent = () => {
               smooth={true}
               offset={-100}
               duration={100}
+              active
             >
               Home
             </Link>

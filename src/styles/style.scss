@@ -15,31 +15,61 @@ body {
     font-style: normal;
     font-size: 1em;
     line-height: 1.9;
-    color: #6f6f6f;
+    
+    // color: #ffffff;
 }
+
 //NAVBAR
+img.logo-home{
+  width: 40px;
+
+}
+
+
+// span.navbar-toggler-icon {
+//   background-color: white !important;
+// }
+button.navbar-toggler.collapsed {
+  background-color: white ;
+}
+button.navbar-toggler {
+  background-color: white;
+}
 .navbar {
   position: sticky;
   top: 0;
-  background-color: #fff;
+  background-color: #fff!important;
   z-index: 999;
+  box-shadow: 0px 2px 4px rgba(60, 59, 59, 0.25);
+
+  
 }
-
-
+a.nav-link.text-lgt.pe-4.cursor-pointer {
+  color: #000000;
+  cursor: pointer;
+}
+.navbar-nav .nav-link.active {
+  color: rgb(30 115 190) !important;
+}
 section {
 	place-items: center;
 	height: 100vh;
+  background-color: #fff;
+
 
 }
-
+#home{
+  background-color: #204362;
+}
+.container h1{ color: white;}
 img.profile-image{
 height: 200px;
 width: 200px;;
 
     margin: auto;
     display: flex;
-    margin-top: 40px;
-    border: 3px solid #cdd4b7;
+    
+    // border: 3px solid #cdd4b7;
     border-radius: 50%;
     
 }
@@ -51,6 +81,8 @@ width: 200px;;
     height: 50px;
     font-size: 20px;
     font-weight: 400;
+    display: block;
+    margin: auto;
     
     
 }
@@ -65,25 +97,67 @@ h1{
     margin: auto;
     padding: 20px;
     text-align: center;
+    color:#000
+
 }
 
 //resume
-//contact page
-#contact{
-    margin:10px
+.left-div .card,
+.right-div .card {
+  margin-bottom: 20px;
+  background-color: #fff;
+  color: rgb(0, 0, 0);
+  box-shadow: 0px 2px 4px rgba(60, 59, 59, 0.25);
+
 }
+#resume{
+  margin: 0px 88px;
+  padding:0px  12px;
+}
+
+//contact page
+
 .main-containt {
     display: flex;
     flex-wrap: wrap;
+    gap:30px
+    
+   
+     
+  
   }
   
   .left-div {
     flex: 1;
+    
   }
+  .contact-detail{
+    margin-top: 60px;
+    font-weight: 500 !important;
+    /* display: table-column-group; */
+    margin-left: 199px;
+    
   
+  }
+ .contact-detail p{
+color:#000000;
+font-weight:600;
+font-size:large;
+ }
+ 
   .right-div {
     flex: 1;
   }
+  p.contact-note {
+    opacity: 0.8;
+}
+.experience{
+  height:50vh
+}
+#contact{
+  margin: 0px 88px;
+  padding:0px  12px;
+}
   
   @media only screen and (max-width: 768px) {
     .container {
@@ -102,10 +176,19 @@ h1{
     display: inline-block;
 
 }
+.left-div.mt-200 {
+  margin-top: 60px;
+}
 .second-container{
     height: 100vh;
     width: 50%;
     display: inline-block;
+}
+#about{
+
+  margin: 0px 88px;
+  padding:0px  12px;
+
 }
 
 .footer{
@@ -123,20 +206,10 @@ h1{
     color:rgb(21 76 121);
 
 }
-@keyframes typing {
-    from { width: 0 }
-    to { width: 30% }
-    50% { width: 30% }
-    100% { width: 0 }
-  }
-  
-  .typing-animation {
-    animation: typing 3s steps(20, end) infinite;
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: .15em solid #154c79;
-    text-align: center;
-    margin: auto;
-    color: #154c79;
 
-  }
+.container-dark{
+  background-color: black;
+}
+.container-light{
+  background-color: white;
+}
