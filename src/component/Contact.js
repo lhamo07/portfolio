@@ -42,20 +42,28 @@ const Contact = () => {
       </h1>
       <div className="main-containt">
         <div className="left-div ml-2 ">
-          <div className="contact-detail">
-            <p>Contact Details</p>
-            <FaMobile /> +977 9866322297 <br />
-            <FaEnvelope /> tenxin2016@gmail.com
+          <div className="fa contact-detail">
+            <p>phone</p>
+            <FaMobile size={24} />{" "}
+            <span style={{ marginLeft: "10px", color: "black" }}>
+              +977 9866322297{" "}
+            </span>
+            <br />
+            <p>Email</p>
+            <FaEnvelope size={24} />{" "}
+            <span style={{ marginLeft: "10px", color: "black" }}>
+              tenxin2016@gmail.com
+            </span>
             <p> Social Profiles</p>
-            <div>
-              <FaInstagram />
+            <div className="fa social-profile">
+              <FaInstagram size={24} />
               <a
                 href="https://www.linkedin.com/in/tenzin-lhamo-91254a168/"
                 rel="noreferrer"
                 target={"_blank"}
               >
                 {" "}
-                <FaLinkedin />
+                <FaLinkedin size={24} />
               </a>
               <a
                 href="https://github.com/lhamo07"
@@ -63,9 +71,9 @@ const Contact = () => {
                 rel="noreferrer"
               >
                 {" "}
-                <FaGithub />
+                <FaGithub size={24} />
               </a>
-              <FaFacebook />
+              <FaFacebook size={24} />
             </div>
           </div>
         </div>
@@ -76,58 +84,74 @@ const Contact = () => {
             back to you as soon as possible
           </p>
 
-          <form>
-            <div className="col-md-12 mb-3">
-              <label htmlFor="" className="form-label">
-                {" "}
-                Name*
-              </label>
-              <input
-                type="text"
-                className="form-control"
-                placeholder="your name"
-                required
-                name="user_name"
-              />
-            </div>
-            <div className="col-md-12 mb-3">
-              <label htmlFor="" className="form-label">
-                {" "}
-                Email*
-              </label>
-              <input
-                type="text"
-                className="form-control"
-                placeholder="your email"
-                required
-                name="user_email"
-              />
-            </div>
+          <form ref={form} onSubmit={sendEmail}>
+            <div className="profile-form ">
+              <div className="row">
+                <div className="col-md-6 mb-3">
+                  <label htmlFor="formGroupExampleInput" className="form-label">
+                    Name*
+                  </label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder=""
+                    required
+                    name="user_name"
+                  />
+                </div>
 
-            <div className="col-md-12 mb-3">
-              {" "}
-              <label
-                htmlFor="exampleFormControlTextarea1"
-                className="form-label"
-              >
-                Description*
-              </label>
-              <textarea
-                className="form-control"
-                rows="5"
-                required
-                placeholder="your message"
-                name="message"
-              ></textarea>
-            </div>
+                <div className="col-md-6 mb-3">
+                  <label htmlFor="formGroupExampleInput" class="form-label">
+                    Email*
+                  </label>
+                  <input
+                    type="email"
+                    className="form-control"
+                    placeholder=""
+                    required
+                    name="user_email"
+                  />
+                </div>
+              </div>
 
-            <button
-              type="submit"
-              value="Send"
-              className="btn btn-primary mt-4 "
-            >
-              Send Message
-            </button>
+              <div className=" mb-3">
+                <label htmlFor="formGroupExampleInput" className="form-label">
+                  Subject*
+                </label>
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder=""
+                  required
+                  name="subject"
+                />
+              </div>
+
+              <div className=" mb-3">
+                <label
+                  htmlFor="exampleFormControlTextarea1"
+                  className="form-label"
+                >
+                  Description*
+                </label>
+                <textarea
+                  className="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="5"
+                  required
+                  name="message"
+                ></textarea>
+              </div>
+              <div className="mb-3">
+                <button
+                  type="submit"
+                  value="Send"
+                  className="btn btn-primary d-grid mt-4"
+                >
+                  Send Message
+                </button>
+              </div>
+            </div>
           </form>
         </div>
       </div>

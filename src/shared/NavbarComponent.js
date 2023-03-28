@@ -11,7 +11,10 @@ const NavbarComponent = () => {
       <Container>
         <Navbar.Brand>
           {" "}
-          <img src={logo} className="logo-home" alt="logo" />
+          <Link to="home">
+            {" "}
+            <img src={logo} className="logo-home" alt="logo" />
+          </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">

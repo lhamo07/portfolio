@@ -9,21 +9,18 @@ import Resume from "./component/Resume";
 import Project from "./component/Project";
 import Contact from "./component/Contact";
 import NavbarComponent from "./shared/NavbarComponent";
-import ThemeContextProvider from "./context/ThemeContext";
 
 function App() {
   return (
     <div>
-      <ThemeContextProvider>
-        <NavbarComponent />
+      <NavbarComponent />
 
-        <Home />
-        <About />
-        <Project />
-        <Resume />
-        <Contact />
-        <Footer />
-      </ThemeContextProvider>
+      <Home />
+      <About />
+      <Project />
+      <Resume />
+      <Contact />
+      <Footer />
     </div>
   );
 }

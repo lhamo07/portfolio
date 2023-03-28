@@ -1,10 +1,13 @@
 import React from "react";
+import profileImg from "../assets/images/profile.png";
+
 const About = () => {
   return (
     <section id="about">
       <h1 className="fw-600 text-center">
         KNOW <span style={{ color: "#1E6AB5" }}>ME MORE</span>
       </h1>
+      <img className="profile-image " src={profileImg} alt="profile" />
       <div class="main-containt">
         <div className="left-div mt-200 ">
           {" "}
