@@ -38,7 +38,7 @@ button.navbar-toggler {
 .navbar {
   position: sticky;
   top: 0;
-  background-color: #fff!important;
+  background-color: #e0e0e0 !important ;
   z-index: 999;
   box-shadow: 0px 2px 4px rgba(60, 59, 59, 0.25);
 
@@ -51,12 +51,22 @@ a.nav-link.text-lgt.pe-4.cursor-pointer {
 .navbar-nav .nav-link.active {
   color: rgb(30 115 190) !important;
 }
+
 section {
 	place-items: center;
 	height: 100vh;
   background-color: #fff;
 
 
+}
+ .mode-toggle img{
+  height:24px;
+  width:24px;
+  cursor: pointer;
+}
+.dark{
+  background-color: #343540;
+  color: white;
 }
 //Home Component
 .mask{
@@ -88,6 +98,7 @@ section {
   width: 100%;
   
 }
+
 #home .content{
   position: absolute;
   transform: translate(-50%,-50%);
@@ -128,6 +139,7 @@ section {
   
 }
 
+
 .btn-primary{
 
     background-color: $secondaryColor;
@@ -165,6 +177,7 @@ section {
   padding:0px  12px;
   height: 150vh !important;
 }
+
 
 //contact page
 
@@ -236,7 +249,12 @@ font-size:$normal-font-size;
   
 //About page
 #about{
-  height:110vh !important
+  height:110vh !important;
+  margin: 0px 88px;
+  padding:0px  12px;
+}
+.about.mode{
+  background-color: #000;
 }
 .first-container {
     height: 100vh;
@@ -283,6 +301,7 @@ img.profile-image{
     color:rgb(21 76 121);
 
 }
+
 
 .container-dark{
   background-color: black;

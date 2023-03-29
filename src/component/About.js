@@ -1,9 +1,11 @@
 import React from "react";
 import profileImg from "../assets/images/profile.png";
-
+import useTheme from "../hooks/useTheme";
 const About = () => {
+  const { mode } = useTheme();
+
   return (
-    <section id="about">
+    <section id="about" className={`${mode}`}>
       <h1 className="fw-600 text-center">
         KNOW <span style={{ color: "#1E6AB5" }}>ME MORE</span>
       </h1>
@@ -30,9 +32,11 @@ const About = () => {
             :Kathmandu,Nepal
             <br />
           </div>
-          <button type="button" className="btn btn-primary">
-            download CV
-          </button>
+          <div className="pt-4">
+            <button type="button " className="btn btn-primary">
+              download CV
+            </button>
+          </div>
         </div>
       </div>
     </section>

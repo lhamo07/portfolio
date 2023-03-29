@@ -9,7 +9,9 @@ import {
   FaGithub,
   FaFacebook,
 } from "react-icons/fa";
+import useTheme from "../hooks/useTheme";
 const Contact = () => {
+  const { mode } = useTheme();
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -36,7 +38,7 @@ const Contact = () => {
     e.target.reset();
   };
   return (
-    <section id="contact">
+    <section id="contact" className={`${mode}`}>
       <h1 className="fw-600 text-center">
         GET <span style={{ color: "#154c79" }}>IN TOUCH</span>
       </h1>

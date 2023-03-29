@@ -3,10 +3,12 @@ import { Link } from "react-scroll";
 import profileImg from "../assets/images/wallpaper.jpg";
 import "../styles/style.scss";
 import Typewriter from "typewriter-effect";
+import useTheme from "../hooks/useTheme";
 
 const Home = () => {
+  const { mode } = useTheme();
   return (
-    <section id="home">
+    <section id="home" className={`${mode}`}>
       <div className="mask">
         <img className="into-img" src={profileImg} alt="" />
       </div>
