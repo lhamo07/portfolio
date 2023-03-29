@@ -1,17 +1,18 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-
+import ProgressBar from "react-bootstrap/ProgressBar";
+import useTheme from "../hooks/useTheme";
 const Resume = () => {
   const downloadCV = () => {};
+  const { mode } = useTheme();
   return (
-    <section id="resume">
+    <section id="resume" className={`${mode}`}>
       <h1 className="fw-600 text-center">
         MY <span style={{ color: "#1e73be" }}>RESUME</span>
       </h1>
-
       <div class="main-containt">
-        <div class="left-div ml-2">
+        <div class={`left-div ml-2 ${mode}`}>
           <h2>Education</h2>
           <Card>
             <Card.Body>
@@ -58,7 +59,24 @@ const Resume = () => {
           </Card>
         </div>
       </div>
-      <h1>Skills</h1>
+      <h2>Skills</h2>
+      <div className="main-containt">
+        <div className="left-div">
+          <p>JavaScript</p>80%
+          <ProgressBar now={80} />
+          <p>HTML/CSS</p>85%
+          <ProgressBar now={85} />
+        </div>
+        <div className="right-div">
+          {" "}
+          <p>Angular</p>70%
+          <ProgressBar now={70} />
+          <p>React JS</p>70%
+          <ProgressBar now={70} />
+          <p>Bootstrap</p>90%
+          <ProgressBar now={90} />
+        </div>
+      </div>
     </section>
   );
 };

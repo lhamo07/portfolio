@@ -3,15 +3,20 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import logo from "../assets/images/logo.svg";
-
+import useTheme from "../hooks/useTheme";
 import { Link } from "react-scroll";
+import ThemeSelector from "../component/ThemeSelector";
+
 const NavbarComponent = () => {
   return (
     <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
       <Container>
         <Navbar.Brand>
           {" "}
-          <img src={logo} className="logo-home" alt="logo" />
+          <Link to="home">
+            {" "}
+            <img src={logo} className="logo-home" alt="logo" />
+          </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -68,6 +73,7 @@ const NavbarComponent = () => {
             >
               Contact
             </Link>
+            <ThemeSelector />
           </Nav>
         </Navbar.Collapse>
       </Container>

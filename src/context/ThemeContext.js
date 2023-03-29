@@ -1,16 +1,24 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useReducer, useState } from "react";
 
 export const ThemeContext = createContext();
-
-const ThemeContextProvider = (props) => {
-  const [theme, setTheme] = useState("light");
-  const toggleTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
+const themeReducer = (state, action) => {
+  switch (action.type) {
+    case "CHANGE_MODE":
+      return { ...state, mode: action.payload };
+    default:
+      return state;
+  }
+};
+const ThemeContextProvider = ({ children }) => {
+  const [state, dispatch] = useReducer(themeReducer, { mode: "dark" });
+  const changeMode = (mode) => {
+    dispatch({ type: "CHANGE_MODE", payload: mode });
   };
 
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      {props.children}
+    // wrap object value in state and pass state object as a value in provider
+    <ThemeContext.Provider value={{ ...state, changeMode }}>
+      {children}
     </ThemeContext.Provider>
   );
 };

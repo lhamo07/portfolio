@@ -9,21 +9,20 @@ import Resume from "./component/Resume";
 import Project from "./component/Project";
 import Contact from "./component/Contact";
 import NavbarComponent from "./shared/NavbarComponent";
-import ThemeContextProvider from "./context/ThemeContext";
+import useTheme from "./hooks/useTheme";
 
 function App() {
+  const { mode } = useTheme();
   return (
-    <div>
-      <ThemeContextProvider>
-        <NavbarComponent />
+    <div className={` ${mode}`}>
+      <NavbarComponent />
 
-        <Home />
-        <About />
-        <Project />
-        <Resume />
-        <Contact />
-        <Footer />
-      </ThemeContextProvider>
+      <Home />
+      <About />
+      <Project />
+      <Resume />
+      <Contact />
+      <Footer />
     </div>
   );
 }

@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-scroll";
+import useTheme from "../hooks/useTheme";
 const Footer = () => {
+  const { mode } = useTheme();
   return (
-    <footer className="footer border-top p-4">
+    <footer className="footer border-top p-4 ">
       <div className="container">
         <div className="copyright-txt">
           <span>
