@@ -40,46 +40,10 @@ const Contact = () => {
   return (
     <section id="contact" className={`${mode}`}>
       <h1 className="fw-600 text-center">
-        GET <span style={{ color: "#154c79" }}>IN TOUCH</span>
+        GET <span style={{ color: "#107cdb" }}>IN TOUCH</span>
       </h1>
-      <div className="main-containt">
-        <div className="left-div ml-2 ">
-          <div className="fa contact-detail">
-            <p>phone</p>
-            <FaMobile size={24} />{" "}
-            <span style={{ marginLeft: "10px", color: "black" }}>
-              +977 9866322297{" "}
-            </span>
-            <br />
-            <p>Email</p>
-            <FaEnvelope size={24} />{" "}
-            <span style={{ marginLeft: "10px", color: "black" }}>
-              tenxin2016@gmail.com
-            </span>
-            <p> Social Profiles</p>
-            <div className="fa social-profile">
-              <FaInstagram size={24} />
-              <a
-                href="https://www.linkedin.com/in/tenzin-lhamo-91254a168/"
-                rel="noreferrer"
-                target={"_blank"}
-              >
-                {" "}
-                <FaLinkedin size={24} />
-              </a>
-              <a
-                href="https://github.com/lhamo07"
-                target={"_blank"}
-                rel="noreferrer"
-              >
-                {" "}
-                <FaGithub size={24} />
-              </a>
-              <FaFacebook size={24} />
-            </div>
-          </div>
-        </div>
-        <div class="right-div">
+      <div className="contact-container">
+        <div>
           <p className="contact-note ">
             {" "}
             Feel free to Contact me by submitting the form below and I will get
@@ -95,7 +59,7 @@ const Contact = () => {
                   </label>
                   <input
                     type="text"
-                    className="form-control"
+                    className="form-control responsive-form"
                     placeholder=""
                     required
                     name="user_name"
@@ -108,7 +72,7 @@ const Contact = () => {
                   </label>
                   <input
                     type="email"
-                    className="form-control"
+                    className="form-control responsive-form"
                     placeholder=""
                     required
                     name="user_email"
@@ -122,7 +86,7 @@ const Contact = () => {
                 </label>
                 <input
                   type="text"
-                  className="form-control"
+                  className="form-control responsive-form"
                   placeholder=""
                   required
                   name="subject"
@@ -137,7 +101,7 @@ const Contact = () => {
                   Description*
                 </label>
                 <textarea
-                  className="form-control"
+                  className="form-control responsive-form"
                   id="exampleFormControlTextarea1"
                   rows="5"
                   required
@@ -148,7 +112,7 @@ const Contact = () => {
                 <button
                   type="submit"
                   value="Send"
-                  className="btn btn-primary d-grid mt-4"
+                  className="btn btn-primary d-grid mt-4 responsive-form"
                 >
                   Send Message
                 </button>

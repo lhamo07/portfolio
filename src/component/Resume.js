@@ -9,7 +9,7 @@ const Resume = () => {
   return (
     <section id="resume" className={`${mode}`}>
       <h1 className="fw-600 text-center">
-        MY <span style={{ color: "#1e73be" }}>RESUME</span>
+        MY <span style={{ color: "#107cdb" }}>RESUME</span>
       </h1>
       <div class="main-containt">
         <div class={`left-div ml-2 ${mode}`}>

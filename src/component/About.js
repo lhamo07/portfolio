@@ -7,13 +7,13 @@ const About = () => {
   return (
     <section id="about" className={`${mode}`}>
       <h1 className="fw-600 text-center">
-        KNOW <span style={{ color: "#1E6AB5" }}>ME MORE</span>
+        KNOW <span style={{ color: "#107cdb" }}>ME MORE</span>
       </h1>
       <img className="profile-image " src={profileImg} alt="profile" />
       <div class="main-containt">
         <div className="left-div mt-200 ">
           {" "}
-          <h3>I'm a Freelance UI/UX Designer and Developer</h3>
+          <h3>I'm Tenzin Lhamo, a web Developer</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
             consequuntur facilis reiciendis maiores commodi voluptate
@@ -22,7 +22,7 @@ const About = () => {
           </p>
         </div>
         <div className="right-div">
-          <div className="contact-detail">
+          <div className="my-detail">
             <span style={{ color: "#000000", fontWeight: "200" }}>Name</span>
             :Tenzin Lhamo
             <br />{" "}
