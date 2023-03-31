@@ -23,13 +23,9 @@ const About = () => {
         </div>
         <div className="right-div">
           <div className="my-detail">
-            <span style={{ color: "#000000", fontWeight: "200" }}>Name</span>
-            :Tenzin Lhamo
-            <br />{" "}
-            <span style={{ color: "#000000", fontWeight: "200" }}>Email</span>
-            :tenxin2016@gmail.Com <br />{" "}
-            <span style={{ color: "#000000", fontWeight: "200" }}>From</span>
-            :Kathmandu,Nepal
+            <span>Name</span> : Tenzin Lhamo
+            <br /> <span>Email</span> : tenxin2016@gmail.Com <br />{" "}
+            <span>From</span> : Kathmandu,Nepal
             <br />
           </div>
           <div className="pt-4">

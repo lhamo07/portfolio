@@ -68,6 +68,7 @@ section {
   background-color: #343540;
   color: white;
 }
+
 //Home Component
 .mask{
   width: 100%;
@@ -172,10 +173,24 @@ section {
   box-shadow: 0px 2px 4px rgba(60, 59, 59, 0.25);
 
 }
+.card.dark{
+  background-color: #111418;
+  color: white;
+}
+input.form-control.responsive-form.dark {
+  background-color: #232a31;
+  border-color: #232a31;
+  color: white;
+}
+textarea#exampleFormControlTextarea1.dark{
+  background-color: #232a31;
+  border-color: #232a31;
+  color: white;
+}
 #resume{
   margin: 0px 88px;
   padding:0px  12px;
-  height: 200vh ;
+  height: 150vh ;
 }
 
 
@@ -235,24 +250,7 @@ font-size:$normal-font-size;
   width: 690px;
 }
 
-// .social-profile a{
-//   color:#1e73be !important;
-//   text-decoration:none;
-// }
-// .social-profile {
-//   color:#1e73be !important;
-//   size:300px
-// }
-  
-  // @media only screen and (max-width: 768px) {
-  //   .container {
-  //     flex-direction: column;
-  //   }
-    
-  //   .left-div, .right-div {
-  //     width: 100%;
-  //   }
-  // }
+
   
 //About page
 #about{
@@ -295,27 +293,13 @@ img.profile-image{
     margin: 0px 88px;
     padding:0px  12px;
   }
-// .footer{
-//     // position: fixed;
-//     left: 0;
-//     bottom: 0;
-//     width: 100%;
-//     background-color: #f5f5f5;
-//     text-align: center;
-//     padding: 10px;
-// }
-// //text animation 
-// //footer new
-// .footer-text a{
-//     color:rgb(21 76 121);
 
-// }
-//footer
 footer{
   padding-top: 4rem;
 	padding-bottom: 2rem;
   background-color: #24262a;
 	text-align: center;
+  
 }
 .social-profile span{
   padding:15px;
@@ -335,44 +319,27 @@ a {
    padding-top: 20px;
    color: white;
           }
-// footer {
-//   background-color: #333;
-//   color: #fff;
-//   padding: 20px;
+          .copyright{
+            display: flex;
+            justify-content: space-between;
+          }
+          .copyright-footer p{
+            margin-left: 60px;
 
-//   .footer-container {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
 
-//     .social-profile {
-//       display: flex;
-//       justify-content: space-between;
-//       align-items: center;
-//       flex-wrap: wrap;
-//       margin-bottom: 20px;
+          }
+          .Privacy-policy p{
+           margin-right: 213px;
+           cursor: pointer;
+          }
+          .modal-content {
+            width: 110%;
+            height: 90vh;
+        }
 
-//       p {
-//         margin-right: 20px;
-//       }
+        .modal-content.dark{
+          background-color: #343a40 ;
+          color: white ;
 
-//       li {
-//         margin-right: 10px;
-//         margin-bottom: 10px;
-
-//         a {
-//           color: #fff;
-//           text-decoration: none;
-
-//           &:hover {
-//             color: #f44336;
-//           }
-//         }
-//       }
-//     }
-
-//     .copyright {
-//       text-align: center;
-//     }
-//   }
-// }
+        }
+        

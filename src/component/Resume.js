@@ -12,9 +12,9 @@ const Resume = () => {
         MY <span style={{ color: "#107cdb" }}>RESUME</span>
       </h1>
       <div class="main-containt">
-        <div class={`left-div ml-2 ${mode}`}>
+        <div className="left-div ml-2">
           <h2>Education</h2>
-          <Card>
+          <Card className={`${mode}`}>
             <Card.Body>
               <p className="badge bg-primary ">2017-2022</p>
               <Card.Title>Computer Science & Information Technology</Card.Title>
@@ -28,7 +28,7 @@ const Resume = () => {
               </Card.Text>
             </Card.Body>
           </Card>
-          <Card>
+          <Card className={`${mode}`}>
             <Card.Body>
               <p className="badge bg-primary ">2014-2016</p>
               <Card.Title>High School (+2 Science)</Card.Title>
@@ -44,7 +44,7 @@ const Resume = () => {
         </div>
         <div class="right-div">
           <h2>Experience</h2>
-          <Card className="experience">
+          <Card className={`experience ${mode}`}>
             <Card.Body>
               <p className="badge bg-primary ">2022-present</p>
               <Card.Title>Jr. Front End Developer</Card.Title>

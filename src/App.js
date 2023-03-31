@@ -10,7 +10,6 @@ import Project from "./component/Project";
 import Contact from "./component/Contact";
 import NavbarComponent from "./shared/NavbarComponent";
 import useTheme from "./hooks/useTheme";
-
 function App() {
   const { mode } = useTheme();
   return (
