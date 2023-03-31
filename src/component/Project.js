@@ -6,8 +6,14 @@ const Project = () => {
   return (
     <section id="projects" className={`${mode}`}>
       <h1 className="fw-600 text-center">
-        MY <span style={{ color: "#154c79" }}>WORKS</span>
+        MY <span style={{ color: "#107cdb" }}>WORKS</span>
       </h1>
+      <p className="project-detail">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
+        architecto. Fuga minus nostrum consequatur nemo aliquam ex harum unde?
+        Molestias eveniet quam est placeat quisquam animi? Facilis laborum optio
+        numquam.
+      </p>
     </section>
   );
 };
