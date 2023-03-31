@@ -50,7 +50,7 @@ const Contact = () => {
             back to you as soon as possible
           </p>
 
-          <form ref={form} onSubmit={sendEmail}>
+          <form ref={form} onSubmit={sendEmail} className={`${mode}`}>
             <div className="profile-form ">
               <div className="row">
                 <div className="col-md-6 mb-3">
@@ -59,7 +59,7 @@ const Contact = () => {
                   </label>
                   <input
                     type="text"
-                    className="form-control responsive-form"
+                    className={`form-control responsive-form ${mode}`}
                     placeholder=""
                     required
                     name="user_name"
@@ -72,7 +72,7 @@ const Contact = () => {
                   </label>
                   <input
                     type="email"
-                    className="form-control responsive-form"
+                    className={`form-control responsive-form ${mode}`}
                     placeholder=""
                     required
                     name="user_email"
@@ -86,7 +86,7 @@ const Contact = () => {
                 </label>
                 <input
                   type="text"
-                  className="form-control responsive-form"
+                  className={`form-control responsive-form ${mode}`}
                   placeholder=""
                   required
                   name="subject"
@@ -101,7 +101,7 @@ const Contact = () => {
                   Description*
                 </label>
                 <textarea
-                  className="form-control responsive-form"
+                  className={`form-control responsive-form ${mode}`}
                   id="exampleFormControlTextarea1"
                   rows="5"
                   required
