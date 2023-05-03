@@ -12,7 +12,6 @@ import {
   FaGithub,
   FaFacebook,
 } from "react-icons/fa";
-import ModalPopup from "../component/ModalPopup";
 const Footer = () => {
   const [modalData, setModalData] = useState([]);
   const [show, setShow] = useState(false);
@@ -66,13 +65,13 @@ const Footer = () => {
                 </span>
               </p>
             </div>
-            <div className="Privacy-policy">
+            {/*  <div className="Privacy-policy">
               <p onClick={handleShow}>Privacy Policy</p>
-            </div>
+            </div> */}
           </div>
         </div>
       </footer>
-      <Modal
+      {/* <Modal
         show={show}
         onHide={handleClose}
         backdrop="static"
@@ -99,7 +98,7 @@ const Footer = () => {
           interesset his et, Lisque persius interesset his et, in quot quidam
           persequeris vim, ad mea essent possim iriure.
         </Modal.Body>
-      </Modal>
+      </Modal> */}
     </div>
   );
 };

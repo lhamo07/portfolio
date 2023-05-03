@@ -10,7 +10,7 @@
     font-family: "Open Sans", sans-serif;
 }
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: "sans-serif", sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: 1em;
@@ -52,13 +52,13 @@ a.nav-link.text-lgt.pe-4.cursor-pointer {
   color: #107cdb !important;
 }
 
-section {
-	// place-items: center;
+// section {
+// 	// place-items: center;
 
-  background-color: #fff;
+//   background-color: #fff;
 
 
-}
+// }
  .mode-toggle img{
   height:24px;
   width:24px;
@@ -192,89 +192,100 @@ textarea#exampleFormControlTextarea1.dark{
   padding:0px  12px;
   height: 150vh ;
 }
-
-
 //contact page
-.contact-container{
-  align-items: center;
+.bg_color {
+  background: #f8f9fc;
 }
-.main-containt {
-    display: flex;
-    flex-wrap: wrap;
-    gap:30px
+.p-4 {
+  padding-bottom: 7.5rem!important;
+  padding-left:7.5rem!important; 
+  padding-right: 7.5rem!important;
+}
+
+// //contact page
+// .contact-container{
+//   align-items: center;
+// }
+// .main-containt {
+//     display: flex;
+//     flex-wrap: wrap;
+//     gap:30px
     
    
      
   
-  }
+//   }
   
-  .left-div {
-    flex: 1;
+//   .left-div {
+//     flex: 1;
     
-  }
-  .contact-detail{
-    margin-top: 60px;
-    font-weight: 500 !important;
-    /* display: table-column-group; */
-    margin-left: 199px;
-    color:#1e73be ;
+//   }
+//   .contact-detail{
+//     margin-top: 60px;
+//     font-weight: 500 !important;
+//     /* display: table-column-group; */
+//     margin-left: 199px;
+//     color:#1e73be ;
     
     
   
-  }
- .contact-detail p{
-color:#000000;
-font-weight:600;
-font-size:$normal-font-size;
- }
- .contact-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-  .right-div {
-    flex: 1;
-  }
-  p.contact-note {
-    opacity: 0.8;
-}
-.experience{
-  height:50vh
-}
-#contact{
-  margin: 0px 88px;
-  padding:0px  12px;
-}
-#contact .btn-primary{
-  width: 690px;
-}
+//   }
+//  .contact-detail p{
+// color:#000000;
+// font-weight:600;
+// font-size:$normal-font-size;
+//  }
+//  .contact-container {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 100%;
+// }
+//   .right-div {
+//     flex: 1;
+//   }
+//   p.contact-note {
+//     opacity: 0.8;
+// }
+// .experience{
+//   height:50vh
+// }
+// #contact{
+//   margin: 0px 88px;
+//   padding:0px  12px;
+// }
+// #contact .btn-primary{
+//   width: 690px;
+// }
 
 
   
 //About page
-#about{
-  height:110vh !important;
-  margin: 0px 88px;
-  padding:0px  12px;
-}
+
 .about.mode{
   background-color: #000;
 }
-.first-container {
-    height: 100vh;
-    width: 50%;
-    display: inline-block;
+.certification-img img{
+  transition: all .2s ease-in-out;
+}
+.certification-img:hover {
+  transform: scale(1.1);
+}
 
-}
-.left-div.mt-200 {
-  margin-top: 60px;
-}
-.second-container{
-    height: 100vh;
-    width: 50%;
-    display: inline-block;
-}
+// .first-container {
+//     height: 100vh;
+//     width: 50%;
+//     display: inline-block;
+
+// }
+// .left-div.mt-200 {
+//   margin-top: 60px;
+// }
+// .second-container{
+//     height: 100vh;
+//     width: 50%;
+//     display: inline-block;
+// }
 
 img.profile-image{
   height: 200px;
@@ -287,13 +298,7 @@ img.profile-image{
       border-radius: 50%;
       
   }
-  //Project Page
-  #projects{
-    height:100vh;
-    margin: 0px 88px;
-    padding:0px  12px;
-  }
-
+ 
 footer{
   padding-top: 4rem;
 	padding-bottom: 2rem;
@@ -319,27 +324,22 @@ a {
    padding-top: 20px;
    color: white;
           }
-          .copyright{
-            display: flex;
-            justify-content: space-between;
-          }
-          .copyright-footer p{
-            margin-left: 60px;
+          
+         
+        //   .Privacy-policy p{
+        //    margin-right: 213px;
+        //    cursor: pointer;
+        //   }
+        //   .modal-content {
+        //     width: 110%;
+        //     height: 90vh;
+        // }
 
+        // .modal-content.dark{
+        //   background-color: #343a40 ;
+        //   color: white ;
 
-          }
-          .Privacy-policy p{
-           margin-right: 213px;
-           cursor: pointer;
-          }
-          .modal-content {
-            width: 110%;
-            height: 90vh;
+        // }
+        .colorTitle{
+          color: #107cdb;
         }
-
-        .modal-content.dark{
-          background-color: #343a40 ;
-          color: white ;
-
-        }
-        
