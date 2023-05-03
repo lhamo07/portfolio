@@ -3,7 +3,6 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import logo from "../assets/images/logo.svg";
-import useTheme from "../hooks/useTheme";
 import { Link } from "react-scroll";
 import ThemeSelector from "../component/ThemeSelector";
 
@@ -15,7 +14,7 @@ const NavbarComponent = () => {
           {" "}
           <Link to="home">
             {" "}
-            <img src={logo} className="logo-home" alt="logo" />
+            <img src={logo} className="logo-home " alt="logo" />
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -50,17 +49,27 @@ const NavbarComponent = () => {
               offset={-100}
               duration={100}
             >
-              Projects
+              Portfolio
             </Link>
             <Link
-              to="resume"
+              to="skill"
               className="nav-link text-lgt pe-4 cursor-pointer"
               spy={true}
               smooth={true}
               offset={-100}
               duration={100}
             >
-              Resume
+              Skills
+            </Link>
+            <Link
+              to="education"
+              className="nav-link text-lgt pe-4 cursor-pointer"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={100}
+            >
+              Education
             </Link>
 
             <Link

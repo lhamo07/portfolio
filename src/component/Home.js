@@ -19,7 +19,7 @@ const Home = () => {
           {" "}
           <Typewriter
             options={{
-              strings: ["Front End Developer"],
+              strings: ["I'm a Front End Developer.", "I'm a Designer."],
               autoStart: true,
               loop: true,
             }}
