@@ -19,11 +19,12 @@ const Footer = () => {
   const handleShow = () => setShow(true);
   const { mode } = useTheme();
   return (
-    <div>
+    <div className="footer">
       {" "}
-      <footer>
-        <div className="footer-container">
-          <div className="social-profile">
+      <div className="container">
+        <div class="row">
+          <div class="col-md-12 ">
+            {" "}
             <span>
               <a
                 href="https://www.linkedin.com/in/tenzin-lhamo-91254a168/"
@@ -56,21 +57,18 @@ const Footer = () => {
               </a>
             </span>
           </div>
-          <div className="copyright">
-            <div className="copyright-footer">
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <footer>
               <p>
-                Copyright &copy; 2023{" "}
-                <span style={{ color: "#107cdb", cursor: "pointer" }}>
-                  <Link to="home">Tenzin Lhamo</Link>
-                </span>
-              </p>
-            </div>
-            {/*  <div className="Privacy-policy">
-              <p onClick={handleShow}>Privacy Policy</p>
-            </div> */}
+                Copyright &copy; 2023
+                <Link to="home"> Tenzin Lhamo</Link>
+              </p>{" "}
+            </footer>
           </div>
         </div>
-      </footer>
+      </div>
       {/* <Modal
         show={show}
         onHide={handleClose}

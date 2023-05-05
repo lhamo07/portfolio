@@ -299,16 +299,19 @@ img.profile-image{
       
   }
  
-footer{
+.footer{
   padding-top: 4rem;
 	padding-bottom: 2rem;
   background-color: #24262a;
 	text-align: center;
+  color: white;
   
 }
-.social-profile span{
-  padding:15px;
-
+.footer span {
+  margin-right: 19px;
+}
+.footer .col-md-12 {
+  margin-bottom: 20px;
 }
 a {
             color: #fff;
