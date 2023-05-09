@@ -298,7 +298,43 @@ img.profile-image{
       border-radius: 50%;
       
   }
- 
+ .image{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+
+ }
+ .showModal {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text {
+  color: #234779;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 16px 32px;
+}
+.first-project:hover .image {
+  opacity: 0.5;
+}
+
+.first-project:hover .showModal {
+  opacity: 1;
+}
+.text-center.modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .footer{
   padding-top: 4rem;
 	padding-bottom: 2rem;
