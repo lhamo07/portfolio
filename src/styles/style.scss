@@ -24,8 +24,6 @@ img.logo-home{
   width: 40px;
 
 }
-
-
 // span.navbar-toggler-icon {
 //   background-color: white !important;
 // }
@@ -52,13 +50,7 @@ a.nav-link.text-lgt.pe-4.cursor-pointer {
   color: #107cdb !important;
 }
 
-// section {
-// 	// place-items: center;
 
-//   background-color: #fff;
-
-
-// }
  .mode-toggle img{
   height:24px;
   width:24px;
@@ -121,38 +113,36 @@ a.nav-link.text-lgt.pe-4.cursor-pointer {
 
   font-size: $normal-font-size;
  font-weight: 400;
- text-transform: uppercase;
-
-  color:#ffffff
+ color:#ffffff
 
 
 }
-#home .btn-primary{
+// #home .btn-primary{
 
-  background-color: transparent ;
-  width: 200px;
-  height: 50px;
-  font-size: $normal-font-size;
-  font-weight: 400;
-  display: block;
-  margin: auto;
-  border-color: $secondaryColor !important;
+//   background-color: transparent ;
+//   width: 200px;
+//   height: 50px;
+//   font-size: $normal-font-size;
+//   font-weight: 400;
+//   display: block;
+//   margin: auto;
+//   border-color: $secondaryColor !important;
   
-}
+// }
 
 
-.btn-primary{
+// .btn-primary{
 
-    background-color: $secondaryColor;
-    width: 200px;
-    height: 50px;
-    font-size: $normal-font-size;
-    font-weight: 400;
-    display: block;
-    margin: auto;
-    border-color: $secondaryColor !important;
+//     background-color: $secondaryColor;
+//     width: 200px;
+//     height: 50px;
+//     font-size: $normal-font-size;
+//     font-weight: 400;
+//     display: block;
+//     margin: auto;
+//     border-color: $secondaryColor !important;
     
-}
+// }
 .btn-primary a {
     color: rgb(255, 255, 255) !important;
     text-decoration: none !important;
@@ -194,13 +184,13 @@ textarea#exampleFormControlTextarea1.dark{
 }
 //contact page
 .bg_color {
-  background: #f8f9fc;
+  background: #212529;
 }
-.p-4 {
-  padding-bottom: 7.5rem!important;
-  padding-left:7.5rem!important; 
-  padding-right: 7.5rem!important;
-}
+// .p-4 {
+//   padding-bottom: 7.5rem!important;
+//   padding-left:7.5rem!important; 
+//   padding-right: 7.5rem!important;
+// }
 
 // //contact page
 // .contact-container{
@@ -265,12 +255,12 @@ textarea#exampleFormControlTextarea1.dark{
 .about.mode{
   background-color: #000;
 }
-.certification-img img{
-  transition: all .2s ease-in-out;
-}
-.certification-img:hover {
-  transform: scale(1.1);
-}
+// .certification-img img{
+//   transition: all .2s ease-in-out;
+// }
+// .certification-img:hover {
+//   transform: scale(1.1);
+// }
 
 // .first-container {
 //     height: 100vh;
@@ -298,17 +288,56 @@ img.profile-image{
       border-radius: 50%;
       
   }
- 
-footer{
+ .image{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+
+ }
+ .showModal {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text {
+  color: #234779;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 16px 32px;
+}
+.first-project:hover .image {
+  opacity: 0.5;
+}
+
+.first-project:hover .showModal {
+  opacity: 1;
+}
+.text-center.modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer{
   padding-top: 4rem;
 	padding-bottom: 2rem;
   background-color: #24262a;
 	text-align: center;
+  color: white;
   
 }
-.social-profile span{
-  padding:15px;
-
+.footer span {
+  margin-right: 19px;
+}
+.footer .col-md-12 {
+  margin-bottom: 20px;
 }
 a {
             color: #fff;
@@ -343,3 +372,18 @@ a {
         .colorTitle{
           color: #107cdb;
         }
+        .contact-form{
+          width: 75%;
+          align-items: center !important;
+        }
+        // .float-end img{
+        //   display: flex;
+        //   float:right;
+
+        // }
+        
+          .button {
+            height: 54px;
+            width: 143px;
+        }
+        

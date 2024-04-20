@@ -2,8 +2,6 @@ import React from "react";
 import "../styles/style.scss";
 import useTheme from "../hooks/useTheme";
 import { Link } from "react-scroll";
-import { useState } from "react";
-import Modal from "react-bootstrap/Modal";
 import {
   FaMobile,
   FaInstagram,
@@ -13,17 +11,15 @@ import {
   FaFacebook,
 } from "react-icons/fa";
 const Footer = () => {
-  const [modalData, setModalData] = useState([]);
-  const [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  let currentDate = new Date();
+  const year = currentDate.getFullYear();
   const { mode } = useTheme();
   return (
-    <div>
-      {" "}
-      <footer>
-        <div className="footer-container">
-          <div className="social-profile">
+    <div className="footer">
+      <div className="container">
+        <div class="row">
+          <div class="col-md-12 ">
+            {" "}
             <span>
               <a
                 href="https://www.linkedin.com/in/tenzin-lhamo-91254a168/"
@@ -56,49 +52,18 @@ const Footer = () => {
               </a>
             </span>
           </div>
-          <div className="copyright">
-            <div className="copyright-footer">
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <footer>
               <p>
-                Copyright &copy; 2023{" "}
-                <span style={{ color: "#107cdb", cursor: "pointer" }}>
-                  <Link to="home">Tenzin Lhamo</Link>
-                </span>
-              </p>
-            </div>
-            {/*  <div className="Privacy-policy">
-              <p onClick={handleShow}>Privacy Policy</p>
-            </div> */}
+                Copyright &copy; {year}
+                <Link to="home"> Tenzin Lhamo</Link>
+              </p>{" "}
+            </footer>
           </div>
         </div>
-      </footer>
-      {/* <Modal
-        show={show}
-        onHide={handleClose}
-        backdrop="static"
-        keyboard={false}
-      >
-        <Modal.Header closeButton className={`${mode}`}>
-          <Modal.Title>Privacy Policy</Modal.Title>
-        </Modal.Header>
-        <Modal.Body className={`${mode}`}>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. Lisque persius interesset
-          his et, in quot quidam persequeris vim, ad mea essent possim iriure.
-          Quidam lisque persius interesset his et, Lisque persius interesset his
-          et, in quot quidam persequeris vim, ad mea essent possim iriure. In
-          quot quidam persequeris vim, ad mea essent possim iriure. Quidam
-          lisque persius interesset his et. Quidam lisque persius interesset his
-          et, Lisque persius interesset his et. Interesset his et, Lisque
-          persius interesset his et, in quot quidam persequeris vim, ad mea
-          essent possim iriure. Persius interesset his et, Lisque persius
-          interesset his et, in quot quidam persequeris vim, ad mea essent
-          possim iriure. Quot quidam persequeris vim Quidam lisque persius
-          interesset his et, Lisque persius interesset his et, in quot quidam
-          persequeris vim, ad mea essent possim iriure.
-        </Modal.Body>
-      </Modal> */}
+      </div>
     </div>
   );
 };

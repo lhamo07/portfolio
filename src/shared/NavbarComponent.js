@@ -9,11 +9,9 @@ import ThemeSelector from "../component/ThemeSelector";
 const NavbarComponent = () => {
   return (
     <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
-      <Container>
+      <div className="container">
         <Navbar.Brand>
-          {" "}
           <Link to="home">
-            {" "}
             <img src={logo} className="logo-home " alt="logo" />
           </Link>
         </Navbar.Brand>
@@ -85,7 +83,7 @@ const NavbarComponent = () => {
             <ThemeSelector />
           </Nav>
         </Navbar.Collapse>
-      </Container>
+      </div>
     </Navbar>
   );
 };
