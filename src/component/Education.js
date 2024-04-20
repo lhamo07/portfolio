@@ -1,6 +1,9 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import frontendCertificate from "../assets/images/intro-to-frontend.jpg";
+
+import certificate1 from "../assets/images/ibmcertificate.jpeg";
+import certificate2 from  "../assets/images/advReact.jpeg"
+import certificate3 from  "../assets/images/intro-to-frontend.jpg"
 
 import useTheme from "../hooks/useTheme";
 const Resume = () => {
@@ -55,21 +58,31 @@ const Resume = () => {
           </div>
           <div className="row">
             <h4>CERTIFICATION</h4>
-            <div className="col-6 mb-4 p-4">
+            <div className="col-4 mb-4 p-4">
               <div className="certification-img text-center mb-4">
                 <img
                   className="img-fluid  rounded  "
-                  src={frontendCertificate}
+                  src={certificate3}
                   alt="profile"
                 />
               </div>
             </div>
-            <div className="col-6 mb-4 p-4">
+            <div className="col-4 mb-4 p-4">
+              <div className="certification-img text-center mb-4">
+                <img
+                  className="img-fluid  rounded  "
+                  src={certificate1}
+                  alt="profile"
+                />
+              </div>
+            </div>
+
+            <div className="col-4 mb-4 p-4">
               {" "}
               <div className="certification-img text-center">
                 <img
                   className="img-fluid  rounded "
-                  src={frontendCertificate}
+                  src={certificate2}
                   alt="profile"
                 />
               </div>

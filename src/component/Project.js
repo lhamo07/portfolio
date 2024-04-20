@@ -22,7 +22,10 @@ const Project = () => {
       <div className="py-4 ">
         <div className="container">
           <div className="row ">
-            <h2 className="text-center">WORK </h2>
+            <h2 className="text-center">
+              {" "}
+              MY<span className="colorTitle"> WORK</span>{" "}
+            </h2>
           </div>
           <div className="row">
             <div className="col-4 rounded first-project " onClick={handleShow}>

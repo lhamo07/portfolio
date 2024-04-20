@@ -24,8 +24,6 @@ img.logo-home{
   width: 40px;
 
 }
-
-
 // span.navbar-toggler-icon {
 //   background-color: white !important;
 // }
@@ -52,13 +50,7 @@ a.nav-link.text-lgt.pe-4.cursor-pointer {
   color: #107cdb !important;
 }
 
-// section {
-// 	// place-items: center;
 
-//   background-color: #fff;
-
-
-// }
  .mode-toggle img{
   height:24px;
   width:24px;
@@ -121,38 +113,36 @@ a.nav-link.text-lgt.pe-4.cursor-pointer {
 
   font-size: $normal-font-size;
  font-weight: 400;
- text-transform: uppercase;
-
-  color:#ffffff
+ color:#ffffff
 
 
 }
-#home .btn-primary{
+// #home .btn-primary{
 
-  background-color: transparent ;
-  width: 200px;
-  height: 50px;
-  font-size: $normal-font-size;
-  font-weight: 400;
-  display: block;
-  margin: auto;
-  border-color: $secondaryColor !important;
+//   background-color: transparent ;
+//   width: 200px;
+//   height: 50px;
+//   font-size: $normal-font-size;
+//   font-weight: 400;
+//   display: block;
+//   margin: auto;
+//   border-color: $secondaryColor !important;
   
-}
+// }
 
 
-.btn-primary{
+// .btn-primary{
 
-    background-color: $secondaryColor;
-    width: 200px;
-    height: 50px;
-    font-size: $normal-font-size;
-    font-weight: 400;
-    display: block;
-    margin: auto;
-    border-color: $secondaryColor !important;
+//     background-color: $secondaryColor;
+//     width: 200px;
+//     height: 50px;
+//     font-size: $normal-font-size;
+//     font-weight: 400;
+//     display: block;
+//     margin: auto;
+//     border-color: $secondaryColor !important;
     
-}
+// }
 .btn-primary a {
     color: rgb(255, 255, 255) !important;
     text-decoration: none !important;
@@ -194,13 +184,13 @@ textarea#exampleFormControlTextarea1.dark{
 }
 //contact page
 .bg_color {
-  background: #f8f9fc;
+  background: #212529;
 }
-.p-4 {
-  padding-bottom: 7.5rem!important;
-  padding-left:7.5rem!important; 
-  padding-right: 7.5rem!important;
-}
+// .p-4 {
+//   padding-bottom: 7.5rem!important;
+//   padding-left:7.5rem!important; 
+//   padding-right: 7.5rem!important;
+// }
 
 // //contact page
 // .contact-container{
@@ -265,12 +255,12 @@ textarea#exampleFormControlTextarea1.dark{
 .about.mode{
   background-color: #000;
 }
-.certification-img img{
-  transition: all .2s ease-in-out;
-}
-.certification-img:hover {
-  transform: scale(1.1);
-}
+// .certification-img img{
+//   transition: all .2s ease-in-out;
+// }
+// .certification-img:hover {
+//   transform: scale(1.1);
+// }
 
 // .first-container {
 //     height: 100vh;
@@ -382,3 +372,18 @@ a {
         .colorTitle{
           color: #107cdb;
         }
+        .contact-form{
+          width: 75%;
+          align-items: center !important;
+        }
+        // .float-end img{
+        //   display: flex;
+        //   float:right;
+
+        // }
+        
+          .button {
+            height: 54px;
+            width: 143px;
+        }
+        

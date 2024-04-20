@@ -14,7 +14,7 @@ const Home = () => {
       </div>
       <div className="content">
         {" "}
-        <p>Hi, I'm Tenzin Lhamo</p>
+        <p>Hello, there</p>
         <h1>
           {" "}
           <Typewriter
@@ -26,7 +26,7 @@ const Home = () => {
           />
         </h1>
         <div className="text-center mt-3">
-          <button className="btn btn-primary mt-4">
+          <button className="button btn btn-outline-primary rounded-pill mt-4">
             <Link to="contact">Hire Me</Link>
           </button>
         </div>

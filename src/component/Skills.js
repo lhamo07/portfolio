@@ -6,12 +6,9 @@ const Skills = () => {
     <section id="skill">
       <div className="py-4">
         <div className="container">
-          <div className="row ">
+          <div className="row py-3">
             <h2 className="text-center ">SKILLS</h2>
-            <div
-              className="col-sm-6 col-md-6"
-              style={{ paddingTop: "50px", textAlign: "center" }}
-            >
+            <div className="col-sm-6 col-md-6">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
               quidem aliquid optio excepturi! Quaerat distinctio tempora dicta
               reiciendis dolorem magni ad nobis amet necessitatibus corrupti

@@ -37,74 +37,80 @@ const Contact = () => {
           <h2 className="text-center">
             KNOW <span className="colorTitle">ME </span> MORE
           </h2>
-          <form ref={form} onSubmit={sendEmail} className={`p-4 ${mode} `}>
-            <p>
-              Feel free to Contact me by submitting the form below and I will
-              get back to you as soon as possible
-            </p>
-            <div className="row g-3">
-              <div className="col-md-6">
+          <div className="d-flex justify-content-center">
+            <form
+              ref={form}
+              onSubmit={sendEmail}
+              className={`contact-form ${mode} `}
+            >
+              <p>
+                Feel free to Contact me by submitting the form below and I will
+                get back to you as soon as possible
+              </p>
+              <div className="row g-3">
+                <div className="col-md-6">
+                  <label htmlFor="formGroupExampleInput" className="form-label">
+                    Name*
+                  </label>
+                  <input
+                    type="text"
+                    className={`form-control ${mode}`}
+                    placeholder=""
+                    required
+                    name="user_name"
+                  />
+                </div>
+                <div className="col-md-6">
+                  <label htmlFor="formGroupExampleInput" className="form-label">
+                    Email*
+                  </label>
+                  <input
+                    type="email"
+                    className={`form-control ${mode}`}
+                    placeholder=""
+                    required
+                    name="user_email"
+                  />
+                </div>
+              </div>
+              <div className="mb-3">
                 <label htmlFor="formGroupExampleInput" className="form-label">
-                  Name*
+                  Subject*
                 </label>
                 <input
                   type="text"
                   className={`form-control ${mode}`}
                   placeholder=""
                   required
-                  name="user_name"
+                  name="subject"
                 />
               </div>
-              <div className="col-md-6">
-                <label htmlFor="formGroupExampleInput" className="form-label">
-                  Email*
+              <div className="mb-3">
+                <label
+                  htmlFor="exampleFormControlTextarea1"
+                  className="form-label"
+                >
+                  Description*
                 </label>
-                <input
-                  type="email"
+                <textarea
                   className={`form-control ${mode}`}
-                  placeholder=""
+                  id="exampleFormControlTextarea1"
+                  rows="5"
                   required
-                  name="user_email"
-                />
+                  name="message"
+                ></textarea>
               </div>
-            </div>
-            <div className="mb-3">
-              <label htmlFor="formGroupExampleInput" className="form-label">
-                Subject*
-              </label>
-              <input
-                type="text"
-                className={`form-control ${mode}`}
-                placeholder=""
-                required
-                name="subject"
-              />
-            </div>
-            <div className="mb-3">
-              <label
-                htmlFor="exampleFormControlTextarea1"
-                className="form-label"
-              >
-                Description*
-              </label>
-              <textarea
-                className={`form-control ${mode}`}
-                id="exampleFormControlTextarea1"
-                rows="5"
-                required
-                name="message"
-              ></textarea>
-            </div>
-            <div className="mb-3">
-              <button
-                type="submit"
-                value="Send"
-                className="btn btn-primary d-grid mt-4"
-              >
-                Send Message
-              </button>
-            </div>
-          </form>
+              <div className="mb-3">
+                <button
+                  type="submit"
+                  value="Send"
+                  className="btn btn-primary d-grid mt-4"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </section>
