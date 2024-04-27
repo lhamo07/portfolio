@@ -24,7 +24,7 @@ const Project = () => {
           <div className="row ">
             <h2 className="text-center">
               {" "}
-              MY<span className="colorTitle"> WORK</span>{" "}
+              MY<span className="colorTitle">WORK</span>{" "}
             </h2>
           </div>
           <div className="row">
