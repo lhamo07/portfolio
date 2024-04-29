@@ -1,9 +1,9 @@
 import React from "react";
 import useTheme from "../hooks/useTheme";
 import popal from "../assets/images/popal.png";
-import emailPipeline from "../assets/images/emailPipeline.png";
+import emailPipeline from "../assets/images/knowitall.png";
 import ProjectModal from "./ProjectModal";
-import portfolio from "../assets/images/potfolio.png";
+import portfolio from "../assets/images/gandalfInsight.png";
 import popalbanner from "../assets/images/popal-bnr.png";
 
 import { useState } from "react";

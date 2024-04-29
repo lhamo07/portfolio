@@ -1,5 +1,5 @@
 import React from "react";
-import profileImg from "../assets/images/me.png";
+import profileImg from "../assets/images/Tenzin.png";
 import useTheme from "../hooks/useTheme";
 const About = () => {
   const { mode } = useTheme();
@@ -35,16 +35,22 @@ const About = () => {
               <span className="fw-600 me-2">From</span> : New York, USA
               <br />
               <div className="py-3">
-                <button
+                {/* <button
                   type="button"
                   className="button btn btn-primary rounded-pill"
                 >
                   download CV
-                </button>
+                </button> */}
+
+                <a href="/FEresume-3.pdf" download >
+                  <button type="button" className="button btn btn-primary rounded-pill">
+                    Download CV
+                  </button>
+                </a>
               </div>
             </div>
             <div className="col-sm-4 d-flex justify-content-end">
-              <img className="img-fluid" src={profileImg} alt="profile" />
+              <img className="img-fluid" src={profileImg} alt="profile" height="300" width="300"/>
             </div>
           </div>
         </div>

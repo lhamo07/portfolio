@@ -27,13 +27,7 @@ const Resume = () => {
                     Tribhuvan University
                   </Card.Subtitle>
                   <Card.Text>
-                    Here you can provide a brief summary of your resume or your
-                    professional background. provide a brief summary of your
-                    resume or your professional background. Here you can provide
-                    a brief summary of your resume or your professional
-                    background. provide a brief summary of your resume or your
-                    professional background.
-                  </Card.Text>
+                  As a graduate with a degree in Computer Science & Information Technology from Tribhuvan University, I have acquired a comprehensive understanding of both theoretical concepts and practical skills essential to the field. Through rigorous coursework, hands-on projects, and practical experiences, I have honed my abilities in areas such as programming languages, database management, networking, software engineering, and system analysis. My education has equipped me with the necessary knowledge and expertise to tackle real-world challenges in the dynamic and evolving landscape of technology.                  </Card.Text>
                 </Card.Body>
               </Card>
             </div>
@@ -46,11 +40,7 @@ const Resume = () => {
                     Central School For Tibetans Mussoorie
                   </Card.Subtitle>
                   <Card.Text>
-                    Here you can provide a brief summary of your resume or your
-                    professional background. Here you can provide a brief
-                    summary of your resume or your professional background.
-                    provide a brief summary of your resume or your professional
-                    background.
+                  As a graduate of Central School for Tibetans in Mussoorie, I have a strong foundation in various subjects, including science. Throughout my high school education, I excelled academically and participated actively in extracurricular activities. My coursework not only provided me with a solid understanding of core subjects like mathematics, physics, chemistry, and biology but also cultivated critical thinking, problem-solving, and teamwork skills. Additionally, I engaged in extracurricular activities such as sports, clubs, and community service, further enhancing my leadership abilities and interpersonal skills. My time at Central School for Tibetans has prepared me to pursue higher education and excel in my chosen field.
                   </Card.Text>
                 </Card.Body>
               </Card>

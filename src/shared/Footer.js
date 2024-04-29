@@ -58,7 +58,7 @@ const Footer = () => {
             <footer>
               <p>
                 Copyright &copy; {year}
-                <Link to="home"> Tenzin Lhamo</Link>
+                <Link to="home"> Tenzin Thakuri</Link>
               </p>{" "}
             </footer>
           </div>

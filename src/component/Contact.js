@@ -35,7 +35,7 @@ const Contact = () => {
       <div className="py-4">
         <div className="container">
           <h2 className="text-center">
-            KNOW <span className="colorTitle">ME </span> MORE
+            GET <span className="colorTitle">IN </span>TOUCH
           </h2>
           <div className="d-flex justify-content-center">
             <form

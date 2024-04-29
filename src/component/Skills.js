@@ -9,10 +9,7 @@ const Skills = () => {
           <div className="row py-3">
             <h2 className="text-center ">SKILLS</h2>
             <div className="col-sm-6 col-md-6">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
-              quidem aliquid optio excepturi! Quaerat distinctio tempora dicta
-              reiciendis dolorem magni ad nobis amet necessitatibus corrupti
-              excepturi, nemo repellendus vero? Non!
+            "As a passionate programmer, I excel in JavaScript, ReactJS, Angular, HTML, and CSS, adeptly solving code bugs and crafting dynamic web solutions. My expertise extends to AWS services like CodeCommit, CodePipeline, S3 bucket, and Cognito for seamless deployment and secure user management. With a strong foundation in Git and GitHub, I prioritize efficient collaboration and version control. Eager to learn, I continually embrace new technologies to drive innovation and exceed expectations in the fast-paced tech industry."
             </div>
             <div className="col-sm-6 col-md-6">
               <p>JavaScript</p>
